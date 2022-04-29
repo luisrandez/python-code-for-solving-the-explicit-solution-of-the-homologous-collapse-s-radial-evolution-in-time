@@ -3,6 +3,12 @@ import numpy as np
 
 def trapezio(time_array, N_fft=16, eps=1e-4):
     """
+    This function solves the transcendental equation 
+    
+    u + sin(u) = tau in [0, pi]
+    
+    by means of the composite trapezoidal rule. 
+    
     Based on https://gist.github.com/oliverphilcox/559f086f1bf63b23d55c508b2f47bad3
     
     Args:
